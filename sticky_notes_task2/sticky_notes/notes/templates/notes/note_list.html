@@ -1,0 +1,35 @@
+{% extends "notes/base.html" %}
+
+{% block content %}
+    <div class="page-heading">
+        <h2>My Notes</h2>
+
+        <a href="{% url 'notes:note_create' %}">
+            Add Note
+        </a>
+    </div>
+
+    {% if notes %}
+        {% for note in notes %}
+            <div class="note">
+                <h3>
+                    <a href="{% url 'notes:note_detail' note.pk %}">
+                        {{ note.title }}
+                    </a>
+                </h3>
+
+                <p>{{ note.content|truncatewords:20 }}</p>
+
+                <a href="{% url 'notes:note_update' note.pk %}">
+                    Edit
+                </a>
+
+                <a href="{% url 'notes:note_delete' note.pk %}">
+                    Delete
+                </a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No notes have been created yet.</p>
+    {% endif %}
+{% endblock %}
