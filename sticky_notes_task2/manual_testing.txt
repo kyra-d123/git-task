@@ -1,0 +1,120 @@
+STICKY NOTES APPLICATION – MANUAL TESTING
+
+1. NOTE LIST PAGE
+Test:
+Opened the home page.
+
+Expected result:
+The Sticky Notes heading, Add Note link and list of notes
+should be displayed.
+
+Actual result:
+The page displayed correctly.
+
+Status:
+PASS
+
+
+2. CREATE NOTE
+Test:
+Clicked Add Note, entered a title and content, and clicked
+Save.
+
+Expected result:
+The note should be stored and displayed.
+
+Actual result:
+The note was created successfully.
+
+Status:
+PASS
+
+
+3. EMPTY FORM VALIDATION
+Test:
+Submitted the form without entering the required details.
+
+Expected result:
+Validation errors should be displayed.
+
+Actual result:
+The form displayed validation errors.
+
+Status:
+PASS
+
+
+4. VIEW NOTE
+Test:
+Clicked the title of an existing note.
+
+Expected result:
+The note detail page should display the complete note.
+
+Actual result:
+The note was displayed correctly.
+
+Status:
+PASS
+
+
+5. EDIT NOTE
+Test:
+Edited the title and content of an existing note.
+
+Expected result:
+The updated information should be saved.
+
+Actual result:
+The note was updated successfully.
+
+Status:
+PASS
+
+
+6. DELETE NOTE
+Test:
+Selected Delete and confirmed the deletion.
+
+Expected result:
+The note should be removed from the database.
+
+Actual result:
+The note was deleted successfully.
+
+Status:
+PASS
+
+
+7. CANCEL DELETE
+Test:
+Opened the delete confirmation page and selected Cancel.
+
+Expected result:
+The note should not be deleted.
+
+Actual result:
+The note remained in the application.
+
+Status:
+PASS
+
+
+8. INVALID NOTE
+Test:
+Attempted to open a note ID that does not exist.
+
+Expected result:
+The application should display a 404 response.
+
+Actual result:
+A 404 response was displayed.
+
+Status:
+PASS
+
+
+FINAL RESULT
+
+All main Sticky Notes CRUD functions were tested manually.
+No obvious bugs were found.
